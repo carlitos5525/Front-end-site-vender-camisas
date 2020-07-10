@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(245, 233, 225);
+}
+
+.flexbox{
+    display: flex;
+}
+
+#header1{
+    background-color: rgb(250, 237, 54);
+    color: white;
+    padding: 18px;
+}
+
+#titulo{
+    display: inline-flexbox;
+    width:50%;
+    padding-left: 10px;
+}
+ .menulink{
+    display: inline-flexbox;
+    text-align: right;
+    width: 50%;
+    margin: 7px;
+}
+.menulink span{
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 15px;
+    font:bold;
+}
+
+#login{
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+
+#cadastro{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+#title{
+    font-size: 23px;
+    display: inline-flex;
+    color: black;
+}
+
+#botmenu{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#botmenu a{
+    display: inline-flexbox;
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font: bold;
+}
+
+#botmenu a:hover{
+    background-color: white;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.produto{
+    display: inline-flexbox;
+    padding: 10px;
+    margin: 10px;
+    width: 33%;
+    border: solid black;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+.margem{
+    display: inline-flexbox;
+    width: 5%;
+}
