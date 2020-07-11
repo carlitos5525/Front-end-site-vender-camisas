@@ -1,12 +1,16 @@
 body{
-    background-color: rgb(245, 233, 225);
+    background-color: rgba(233, 245, 238, 0.959);
+    font-family:'Montserrat', sans-serif;
 }
 
-.flexbox{
+/*.flexbox{
     display: flex;
-}
+    justify-content: space-around;
+}*/
 
 #header1{
+    display: flex;
+    justify-content: space-around;
     background-color: rgb(250, 237, 54);
     color: white;
     padding: 18px;
@@ -17,42 +21,51 @@ body{
     width:50%;
     padding-left: 10px;
 }
- .menulink{
+#title{
+    font-size: 23px;
+    display: inline-flex;
+    color: black;
+    font: bolder;
+    font-family: 'Abril Fatface', cursive;}
+.menulink{
     display: inline-flexbox;
     text-align: right;
+    padding-top: 5px;
     width: 50%;
-    margin: 7px;
 }
-.menulink span{
-    border-style: solid;
+.menulink a{
+    text-decoration: none;
     border-color: white;
     border-radius: 10px;
-    padding: 8px;
+    padding: 10px;
     margin-right: 15px;
     font:bold;
 }
-
 #login{
     color: black;
     border-color: white;
     background-color: white;
 }
-
+#login:hover{
+    border-style: solid 0.5px;
+    border-color: black;
+    font: bolder;
+}
 #cadastro{
     background-color: black;
     border-color: black;
     color: white;
 }
-#title{
-    font-size: 23px;
-    display: inline-flex;
-    color: black;
+#cadastro:hover{
+    background-color: rgb(49, 46, 46);
 }
-
 #botmenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: black;
-    padding: 15px;
-    text-align: center;
+    padding: 12px;
+    justify-content: center;
     margin-top: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -62,33 +75,59 @@ body{
     display: inline-flexbox;
     text-decoration: none;
     color: white;
-    border: solid 1px white;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
-    margin-left: 0px;
-    margin-right: 0px;
     font: bold;
 }
 
 #botmenu a:hover{
     background-color: white;
+    color: black;
+    font: bolder;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .produto{
     display: inline-flexbox;
+    flex-wrap: wrap;
     padding: 10px;
-    margin: 10px;
-    width: 33%;
-    border: solid black;
-    border-radius: 15px;
-    background-color: white;
+    margin: 5px;
+    width: 20%;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.959);
     text-align: center;
+    border-radius: 15px;
+}
+#firstcontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    margin-top: 25px;
 }
 
-.margem{
+#content{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:10px;
+}
+.flexbox img{
     display: inline-flexbox;
-    width: 5%;
+    width: 90%;
+    height: 80%;
+    padding-top: 10px;
+}
+.nomeproduto{
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.preço{
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 6px;
 }
