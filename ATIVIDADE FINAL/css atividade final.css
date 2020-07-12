@@ -3,11 +3,6 @@ body{
     font-family:'Montserrat', sans-serif;
 }
 
-/*.flexbox{
-    display: flex;
-    justify-content: space-around;
-}*/
-
 #header1{
     display: flex;
     justify-content: space-around;
@@ -94,7 +89,7 @@ body{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
-    width: 20%;
+    /*width: 20%;*/
     height: 360px;
     background-color: rgba(255, 255, 255, 0.959);
     text-align: center;
@@ -115,9 +110,10 @@ body{
     flex-wrap: wrap;
     margin-top:10px;
 }
-.flexbox img{
+.produto img{
     display: inline-flexbox;
-    width: 90%;
+    max-width: 90%;
+    min-width: 50%;
     height: 80%;
     padding-top: 10px;
 }
@@ -130,4 +126,22 @@ body{
     margin-top: 5px;
     font-size: 16px;
     margin-bottom: 6px;
+}
+.linkproduto{
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    margin-top: 30px;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+}
+.menufooter{
+    display:inline-flexbox;
+    padding: 15px;
+}
+.menufooter ul{
+    list-style-type: none;
 }
