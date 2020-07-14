@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(233, 245, 238, 0.959);
+    background-color: rgba(214, 221, 217, 0.959);
     font-family:'Montserrat', sans-serif;
 }
 
@@ -42,17 +42,27 @@ body{
     background-color: white;
 }
 #login:hover{
-    border-style: solid 0.5px;
-    border-color: black;
-    font: bolder;
+    background-color:black;
+    border-color: white;
+    color: yellow;
+}
+#login:active{
+    border-color:white;
+    background-color: white;
 }
 #cadastro{
     background-color: black;
-    border-color: black;
     color: white;
 }
 #cadastro:hover{
-    background-color: rgb(49, 46, 46);
+    background-color : white;
+    color: black;
+    font: bolder;
+    border-color: black;
+}
+#cadastro:active{
+    background-color: black;
+    color: white;
 }
 #botmenu{
     display: flex;
@@ -75,13 +85,15 @@ body{
     margin: 5px;
     font: bold;
 }
-
 #botmenu a:hover{
     background-color: white;
     color: black;
     font: bolder;
-    border-style: solid;
     border-radius: 8px;
+}
+#botmenu a:active{
+    color: white;
+    background-color: black;
 }
 
 .produto{
@@ -118,30 +130,45 @@ body{
     padding-top: 10px;
 }
 .nomeproduto{
-    margin-top: 8px;
+    margin-top: 4px;
     margin-bottom: 6px;
     font-size: 18px;
+    color: black;
 }
 .preço{
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 6px;
+    color: blue;
+    margin-bottom: 30px;
+    font: bolder;
 }
 .linkproduto{
     text-decoration: none;
 }
-
+.linkproduto:hover .produto{
+    border-style: solid;
+    border-color: black;
+}
 footer{
     display: flex;
     margin-top: 30px;
-    background-color: grey;
+    background-color: black;
     color: white;
     justify-content: center;
 }
 .menufooter{
     display:inline-flexbox;
     padding: 15px;
+    margin: 10px;
 }
 .menufooter ul{
     list-style-type: none;
+}
+.botfooter{
+    text-decoration: none;
+    color: white;
+}
+.botfooter:hover{
+    color: yellow;
 }
